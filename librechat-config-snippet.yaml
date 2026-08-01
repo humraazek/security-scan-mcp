@@ -1,0 +1,19 @@
+# Add this alongside your existing "playwright" entry in librechat.yaml
+
+mcpServers:
+  playwright:
+    type: sse
+    url: http://host.docker.internal:8931/sse
+    timeout: 120000
+
+  security-scan:
+    type: sse
+    url: http://host.docker.internal:8932/sse
+    timeout: 120000
+
+mcpSettings:
+  allowedDomains:
+    - 'host.docker.internal:8931'
+    - 'localhost:8931'
+    - 'host.docker.internal:8932'
+    - 'localhost:8932'
