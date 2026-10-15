@@ -1,11 +1,12 @@
 {
   "name": "security-scan-mcp",
-  "version": "1.0.0",
+  "version": "2.2.0",
   "description": "Local MCP server exposing non-destructive web application security checks for a local AI security testing agent.",
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --test"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.0",
